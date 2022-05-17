@@ -10,10 +10,12 @@ const Navbar = (props: any) => {
       <ContainerComponent>
         <Logo />
         <RightAlign>
-          <NavbarLink to="" />
-          <NavbarLink to="" />
-          <NavbarLink to="" />
-          <NavbarLink to="" />
+          <NavbarLink to="about" />
+          <NavbarLink to="we offer" />
+          <NavbarLink to="portfolio" />
+          <NavbarLink to="recent work" />
+          <NavbarLink to="contact" />
+          <NavbarLink to="portfolio" />
         </RightAlign>
       </ContainerComponent>
     </Nav>
@@ -33,4 +35,7 @@ const RightAlign = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media (max-width: 960px) {
+    display: none;
+  }
 `

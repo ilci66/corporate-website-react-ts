@@ -6,8 +6,9 @@ type propType = {
 }
 
 const NavbarLink = ({ to }: propType) => {
+  const link = to.replace(' ', '-')
   return (
-    <A href={`#${to}`}>{to}</A>
+    <A href={`#${link}`}>{to}</A>
   )
 }
 
