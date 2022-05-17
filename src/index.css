@@ -9,10 +9,12 @@ img {
 :root {
   --white: rgb(255,255,255);
   --black: rgb(0,0,0);
+  --gray: rgb(69, 69, 69);
   --pink-lavender: #cdb4dbff;
   --orchid-pink: #ffc8ddff;
   --nadeshiko-pink: #ffafccff;
   --uranian-blue: #bde0feff;
+  --darker-blue: rgb(63, 108, 151);
   --baby-blue-eyes: #a2d2ffff;
 }
 body {

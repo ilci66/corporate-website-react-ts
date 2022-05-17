@@ -17,5 +17,4 @@ const AppWrapper = styled.div`
   min-height: 100vh;
   display: flex
   width: 100vw;
-  background: blue;
 `;

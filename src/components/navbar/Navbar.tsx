@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ContainerComponent from '../ContainerComponent'
+import Hamburger from './Hamburger'
 import Logo from './Logo'
 import NavbarLink from './NavbarLink'
 
@@ -17,6 +18,7 @@ const Navbar = (props: any) => {
           <NavbarLink to="contact" />
           <NavbarLink to="portfolio" />
         </RightAlign>
+        <Hamburger />
       </ContainerComponent>
     </Nav>
   )
