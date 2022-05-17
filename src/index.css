@@ -1,3 +1,20 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+img {
+  /* width: 100%; */
+}
+:root {
+  --white: rgb(255,255,255);
+  --black: rgb(0,0,0);
+  --pink-lavender: #cdb4dbff;
+  --orchid-pink: #ffc8ddff;
+  --nadeshiko-pink: #ffafccff;
+  --uranian-blue: #bde0feff;
+  --baby-blue-eyes: #a2d2ffff;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
