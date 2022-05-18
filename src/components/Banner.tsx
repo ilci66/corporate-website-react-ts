@@ -19,11 +19,12 @@ const Banner = () => {
 export default Banner
 
 const BannerWrapper = styled.section`
-  background-image: url(${bgImg});
+  background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${bgImg});
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  
   width: 100%;
   padding-top: var(--top-margin);
   margin-top: 0;
@@ -35,7 +36,7 @@ const BannerContent = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: red;
+  color: white;
 `
 
 const H1 = styled.h1`

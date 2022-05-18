@@ -27,8 +27,7 @@ const Navbar = (props: any) => {
 export default Navbar
 
 const Nav = styled.nav`
-  
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
   height: var(--top-margin);
   position: fixed;
   width: 100%;

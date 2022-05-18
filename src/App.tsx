@@ -3,6 +3,7 @@ import  styled  from 'styled-components';
 import Banner from './components/Banner';
 import Navbar from './components/navbar/Navbar';
 import About from './components/About';
+import Offer from './components/Offer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Banner />
       <About />
+      <Offer />
     </AppWrapper>
   );
 }
