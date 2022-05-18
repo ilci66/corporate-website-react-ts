@@ -7,15 +7,17 @@ img {
   /* width: 100%; */
 }
 :root {
-  --white: rgb(255,255,255);
+  --white: rgb(2, 1, 1);
   --black: rgb(0,0,0);
   --gray: rgb(69, 69, 69);
+  --yellow: #ffbe0b;
   --pink-lavender: #cdb4dbff;
   --orchid-pink: #ffc8ddff;
   --nadeshiko-pink: #ffafccff;
   --uranian-blue: #bde0feff;
   --darker-blue: rgb(63, 108, 151);
   --baby-blue-eyes: #a2d2ffff;
+  --top-margin: 100px;
 }
 body {
   margin: 0;

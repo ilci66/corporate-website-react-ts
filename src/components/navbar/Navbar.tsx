@@ -27,8 +27,11 @@ const Navbar = (props: any) => {
 export default Navbar
 
 const Nav = styled.nav`
-  background: var(--white);
-  height: 100px;
+  
+  backdrop-filter: blur(5px);
+  height: var(--top-margin);
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: row;
 `

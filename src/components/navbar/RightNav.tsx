@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import RightNavbarLink from './RightNavbarLink';
 
 type propType = {
   open:boolean
@@ -8,7 +9,14 @@ type propType = {
 const RightNav = ( props: propType) => {
   return (
     <RightBarWrapper open={props.open}>
-      RignNav
+      <LinkContainer>
+        <RightNavbarLink to="about" />
+        <RightNavbarLink to="we offer" />
+        <RightNavbarLink to="portfolio" />
+        <RightNavbarLink to="recent work" />
+        <RightNavbarLink to="contact" />
+        <RightNavbarLink to="portfolio" />
+      </LinkContainer>
     </RightBarWrapper>
   )
 }
@@ -17,8 +25,10 @@ export default RightNav
 
 const RightBarWrapper = styled.div<{open:boolean}>`
   position: fixed;
+  display: flex;
+  justify-items: center;
   transition: all 0.3s ease-in-out;
-  background: var(--darker-blue);
+  background: var(--gray);
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   top: 0;
   right: 0;
@@ -28,4 +38,12 @@ const RightBarWrapper = styled.div<{open:boolean}>`
   @media screen and (min-width: 961px) {
     display: none;
   }
+`
+
+const LinkContainer = styled.div`
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 30px;
 `
