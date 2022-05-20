@@ -3,9 +3,6 @@
   margin:0;
   box-sizing: border-box;
 }
-img {
-  /* width: 100%; */
-}
 :root {
   --white: rgb(2, 1, 1);
   --black: rgb(0,0,0);
