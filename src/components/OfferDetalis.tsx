@@ -6,11 +6,11 @@ type propTypes = {
   setOpen: Dispatch<SetStateAction<boolean>>
 }
 
-const OfferDetalis: FC<propTypes> = ({open, setOpen}) => {
+const OfferDetalis: FC<propTypes> = (props) => {
   return (
-    
-    <OfferDetalisWrapper open={open}>
-      <button onClick={() => setOpen(false)}></button>
+
+    <OfferDetalisWrapper >
+      <button  onClick={() => props.setOpen(false)}></button>
       
     </OfferDetalisWrapper>
   )
@@ -20,6 +20,6 @@ export default OfferDetalis
 
 const OfferDetalisWrapper = styled.div`
   transition: 0.3s;
-  width: ${({open}) => open ? "100%": "0%"};
-  height: ${({ open }) => open ? '100%' : '0%'};
+  width: ${(props) => props.open ? "100%": "0%"};
+  height: ${(props) => props.open ? '100%' : '0%'};
 `
