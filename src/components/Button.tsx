@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 
 type propType = {
-  text: string
+  text: string,
+  onClick?: Function,
 }
 
 const Button = (prop: propType) => {
