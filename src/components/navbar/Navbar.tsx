@@ -27,12 +27,14 @@ const Navbar = (props: any) => {
 export default Navbar
 
 const Nav = styled.nav`
-  backdrop-filter: blur(6px);
+  // backdrop-filter: blur(6px);
+  background: white;
   height: var(--top-margin);
   position: fixed;
   width: 100%;
   display: flex;
   flex-direction: row;
+  z-index: 2;
 `
 const RightAlign = styled.div`
   margin-left: auto;
