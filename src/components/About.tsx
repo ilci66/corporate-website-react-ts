@@ -4,7 +4,7 @@ import cactusImg from '../assets/yellow-cactus-white-bg.jpg';
 
 const About = () => {
   return (<>
-  <AboutWrapper>
+  <AboutWrapper id="about">
     <Img>
     </Img>
       <TextBox>

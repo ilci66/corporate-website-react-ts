@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket,  faCode, faRobot, faGift } from '@fortawesome/free-solid-svg-icons';
+import OfferBottom from './OfferBottom';
 // import {  faHandRock, } from '@fortawesome/free-regular-svg-icons';
 // import OfferDetails from './OfferDetails';
 
@@ -12,7 +13,7 @@ const Offer = () => {
   useEffect(() => console.log("open?" , open),[open] )
   
   return (
-    
+    <>
     <OfferWrapper >
       <Content>
         <OfferHeader>
@@ -88,6 +89,8 @@ const Offer = () => {
       </Content>
     
     </OfferWrapper>
+    <OfferBottom />
+    </>
   )
 }
 
