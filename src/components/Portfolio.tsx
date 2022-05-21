@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ContainerComponent from './ContainerComponent'
 import data from '../data/portfolioData';
 import PortfolioItem from './PortfolioItem';
+import Numbers from './Numbers';
 
 
 const Portfolio = () => {
@@ -19,6 +20,7 @@ const Portfolio = () => {
           })}
         </Grid>
       </ContainerComponent>
+      <Numbers />
     </Wrapper>
   )
 }
