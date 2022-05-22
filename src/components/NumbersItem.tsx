@@ -1,5 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
+import CountUp from 'react-countup';
+
+
 
 type Props = {
   num: string,
@@ -9,22 +12,9 @@ type Props = {
 
 const NumbersItem = (props: Props) => {
   
-  // let interval: NodeJS.Timer;
-  // let timeOut;
-  const [ count, setCount ] = useState(0);
-  // const [ startCount, setStartCount ] = useState(false);
-
-  // const increment = () => { 
-  //   setCount(count + 1); 
-  //   if(count < parseInt(props.num)) setTimeout(() => increment, 10); clearTimeout(setTimeout(() => increment, 10));
-  //   return;
-  // };
-
-  // useEffect(() => increment())
-
   return (
     <Wrapper>
-      <Num>{count}</Num>
+      <Num>{props.inView && <CountUp start={0} end={parseInt(props.num)} duration={2.5} />}</Num>
       <Text>{props.text}</Text>
     </Wrapper>
   )
@@ -36,9 +26,7 @@ const Wrapper = styled.div`
   height: 300px;
   display: flex;
   flex-direction: column;
-  
   justify-content: center;
-
 `
 
 const Num = styled.p`
