@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ContainerComponent from './ContainerComponent'
 import data from '../data/recentWorkCardData'
 import RecentWorkCard from './RecentWorkCard'
+import Brands from './Brands'
 
 
 const RecentWork = () => {
@@ -14,7 +15,7 @@ const RecentWork = () => {
         <RecentWorkGrid>
           {data.map(d => <RecentWorkCard title={d.title} text={d.text} name={d.name} avatar={d.avatar} />)}
         </RecentWorkGrid>
-        
+        <Brands />
       </ContainerComponent>
     </Wrapper>
   )
