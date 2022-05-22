@@ -35,6 +35,7 @@ const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   z-index: 2;
+  opacity: 0.9;
 `
 const RightAlign = styled.div`
   margin-left: auto;
