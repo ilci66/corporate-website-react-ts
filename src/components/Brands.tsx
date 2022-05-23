@@ -26,4 +26,5 @@ const H3 = styled.h3`
   grid-column: span 5;
   margin-bottom: -120px;
   font-size: 1.8rem;
+  margin-left: 10px;
 `
