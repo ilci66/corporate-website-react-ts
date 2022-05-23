@@ -13,7 +13,7 @@ const RecentWork = () => {
         <H2>Some of our most recent work</H2>
         <SubTitle>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quas maxime a doloremque esse.</SubTitle>
         <RecentWorkGrid>
-          {data.map(d => <RecentWorkCard title={d.title} text={d.text} name={d.name} avatar={d.avatar} />)}
+          {data.map(d => <RecentWorkCard key={d.title} title={d.title} text={d.text} name={d.name} avatar={d.avatar} />)}
         </RecentWorkGrid>
         <Brands />
       </ContainerComponent>

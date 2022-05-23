@@ -6,6 +6,7 @@ import About from './components/About';
 import Offer from './components/Offer';
 import Portfolio from './components/Portfolio';
 import RecentWork from './components/RecentWork';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Offer />
       <Portfolio />
       <RecentWork />
+      <Contact />
     </AppWrapper>
   );
 }
