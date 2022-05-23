@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import CountUp from 'react-countup';
 
@@ -11,10 +11,13 @@ type Props = {
 }
 
 const NumbersItem = (props: Props) => {
-  
+  const [ activated, setActivated ] = useState<boolean>(false);
+
+  useEffect(() => { if(props.inView) setActivated(true) }, [props.inView])
+
   return (
     <Wrapper>
-      <Num>{props.inView && <CountUp start={0} end={parseInt(props.num)} duration={2.5} />}</Num>
+      <Num>{activated && <CountUp start={0} end={parseInt(props.num)} duration={2.5} />}</Num>
       <Text>{props.text}</Text>
     </Wrapper>
   )
