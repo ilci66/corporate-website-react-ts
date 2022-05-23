@@ -140,7 +140,6 @@ const DetailText = styled.p`
 const OfferInfo = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 `
 
@@ -166,6 +165,7 @@ const IconSpan = styled.span`
 `
 const BoxTitle = styled.h3`
   margin-bottom: 26px;
+  width: 100%;
 `
 const BoxText = styled.p`
   line-height: 1.6;

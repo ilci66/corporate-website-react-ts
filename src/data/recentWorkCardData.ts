@@ -21,7 +21,7 @@ const data:recentWorkCardData[] = [
     avatar: woman
   },
   {
-    title: "Free AI Tools That You Can Use", 
+    title: "Free AI Tools You Can Use Today", 
     text: "Praesent porta enim augue, et iaculis sem scelerisque id. Nulla sagittis fringilla imperdiet. Donec vestibulum leo a diam pharetra, vel ullamcorper mauris convallis.",
     name: "Jane Doe",
     avatar: woman
