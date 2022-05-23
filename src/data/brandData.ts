@@ -1,8 +1,8 @@
-import mechanic from '../assets/black-white-mechanic.jpg';
-import view from '../assets/blue-red-view.jpg';
-import flower from '../assets/flower-blue.jpg';
-import lines from '../assets/lines-orange-white.jpg';
-import neuron from '../assets/neuron.jpg';
+import awesome from '../assets/awesome-logo.png';
+import cool from '../assets/cool-brand.png';
+import international from '../assets/international-brand.png';
+import quality from '../assets/quality-brand.png';
+import known from '../assets/well-known-brand.png';
 
 interface BrandData {
   img: string
@@ -10,11 +10,11 @@ interface BrandData {
 };
 
 const data:BrandData[] = [
-  {img: mechanic,  text: "Awesome Brand" },
-  {img: view,  text: "Cool Brand" },
-  {img: lines,  text: "Well Known Brand" },
-  {img: flower,  text: "International Brand" },
-  {img: neuron,  text: "Quality Brand" }
+  {img: awesome,  text: "Awesome Brand" },
+  {img: cool,  text: "Cool Brand" },
+  {img: known,  text: "Well Known Brand" },
+  {img: international,  text: "International Brand" },
+  {img: quality,  text: "Quality Brand" }
 ]
 
 export default data

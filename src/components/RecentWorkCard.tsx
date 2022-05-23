@@ -63,7 +63,7 @@ const WriterBox = styled.div`
 
 const H3 = styled.h3`
   font-size: 1.4rem;
-  
+  margin-bottom: 20px;
 `
 const WriterP = styled.p`
   margin-top: 6px;

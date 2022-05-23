@@ -9,19 +9,19 @@ interface recentWorkCardData {
 
 const data:recentWorkCardData[] = [
   {
-    title: "5 Methods to Increase Visibility Online", 
+    title: "5 Methods to Increase Visibility", 
     text: "Praesent porta enim augue, et iaculis sem scelerisque id. Nulla sagittis fringilla imperdiet. Donec vestibulum leo a diam pharetra, vel ullamcorper mauris convallis.",
     name: "Jane Doe",
     avatar: woman
   },
   {
-    title: "How To Gain More Customers In 5 Easy Steps", 
+    title: "How To Gain More Customers", 
     text: "Praesent porta enim augue, et iaculis sem scelerisque id. Nulla sagittis fringilla imperdiet. Donec vestibulum leo a diam pharetra, vel ullamcorper mauris convallis.",
     name: "Jane Doe",
     avatar: woman
   },
   {
-    title: "Free AI Tools That You Can Start Using Today", 
+    title: "Free AI Tools That You Can Use", 
     text: "Praesent porta enim augue, et iaculis sem scelerisque id. Nulla sagittis fringilla imperdiet. Donec vestibulum leo a diam pharetra, vel ullamcorper mauris convallis.",
     name: "Jane Doe",
     avatar: woman
