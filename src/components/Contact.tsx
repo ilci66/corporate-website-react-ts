@@ -22,4 +22,5 @@ const Wrapper = styled.section`
   grid-template-columns: 1fr 1fr;
   width: 100%;
   min-height: 600px;
+  grid-gap: 40px;
 `
