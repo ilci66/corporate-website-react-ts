@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ContactForm from './ContactForm'
 import ContainerComponent from './ContainerComponent'
-import Map from './Map'
+import Map from './MapComponent'
 
 const Contact = () => {
   return (
