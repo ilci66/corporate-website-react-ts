@@ -18,7 +18,7 @@ function MapComponent() {
     }}
     mapStyle="mapbox://styles/mapbox/streets-v9"
     style={{
-      height:"600px", 
+      height:"100%", 
       width: "100%",
     }}
     attributionControl={false}
@@ -30,9 +30,9 @@ function MapComponent() {
     />
     <FullscreenControl />
     <Marker longitude={2.3} latitude={48.87} anchor="bottom" >
-      <img style={{width:"24px", height:"24px",top:"-12px", bottom: "-12px"}} src={pin} alt="pin" />
+      <img style={{width:"34px", height:"34px",top:"-17px", bottom: "-17px"}} src={pin} alt="pin" />
     </Marker>
-    <NavigationControl />
+    <NavigationControl visualizePitch={true}/>
   </ReactMapGL>;
 }
 
