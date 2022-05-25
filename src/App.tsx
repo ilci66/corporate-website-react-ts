@@ -7,6 +7,7 @@ import Offer from './components/Offer';
 import Portfolio from './components/Portfolio';
 import RecentWork from './components/RecentWork';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Portfolio />
       <RecentWork />
       <Contact />
+      <Footer />
     </AppWrapper>
   );
 }
