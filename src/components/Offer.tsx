@@ -3,14 +3,9 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket,  faCode, faRobot, faGift } from '@fortawesome/free-solid-svg-icons';
 import OfferBottom from './OfferBottom';
-// import {  faHandRock, } from '@fortawesome/free-regular-svg-icons';
-// import OfferDetails from './OfferDetails';
 
 
 const Offer = () => {
-  const [open, setOpen] = useState<boolean>(false);
-
-  useEffect(() => console.log("open?" , open),[open] )
   
   return (
     <>
@@ -39,7 +34,7 @@ const Offer = () => {
           </OfferInfo>
         </OfferBox>
 
-        <OfferBox onClick={() => setOpen(true)}>
+        <OfferBox>
         <DetailInfo>
           <DetailText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda aspernatur dignissimos, incidunt quas fugiat.
@@ -55,7 +50,7 @@ const Offer = () => {
           </OfferInfo>  
         </OfferBox>
 
-        <OfferBox onClick={() => setOpen(true)}>
+        <OfferBox>
           <DetailInfo>
             <DetailText>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda aspernatur dignissimos, incidunt quas fugiat.
@@ -71,7 +66,7 @@ const Offer = () => {
           </OfferInfo>
         </OfferBox>
 
-        <OfferBox onClick={() =>setOpen(true)}>
+        <OfferBox>
           <DetailInfo>
               <DetailText>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda aspernatur dignissimos, incidunt quas fugiat.

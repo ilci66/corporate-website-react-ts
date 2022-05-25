@@ -77,6 +77,7 @@ const H3 = styled.h3`
 const P = styled.p`
   color: var(--gray-2);
 `
+
 const Form = styled.form`
   margin-top: 10px;
   width: 100%;

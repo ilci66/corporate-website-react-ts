@@ -20,7 +20,7 @@ const PortfolioItem = (props:propTypes) => {
       <A href={props.link}>
         <FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon>
       </A>
-      <Img src={props.imgSrc} alt={props.alt} />
+      <Img loading='lazy' src={props.imgSrc} alt={props.alt} />
     </Wrapper>
   )
 }
@@ -34,7 +34,7 @@ const A = styled.a`
   position: absolute;
   background: rgba(255,255,255);
   transition: 0.4s;
-  display: flex ;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
