@@ -21,15 +21,15 @@ const StyledButton = styled.button`
   font-size: 1.4rem;
   border-radius: 30px;
   border: 2px solid white;
-  color: black;
-  background: white;
-
+  color: var(--white);
+  background: linear-gradient(25deg, var(--uranian-blue), var(--nadeshiko-pink));
+  
   text-transform: capitalize;
   transition: .4s;
   :hover {
-    background: inherit;
     border: 2px solid black;
-
+    background: inherit;
     cursor: pointer;
+    color: var(--black);
   }
 `

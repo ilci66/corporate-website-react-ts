@@ -9,7 +9,7 @@ html {
   box-sizing: border-box;
 }
 :root {
-  --white: rgb(2, 1, 1);
+  --white: rgb(255, 255, 255);
   --black: rgb(0,0,0);
   --gray: rgb(69, 69, 69);
   --gray-2: rgb(149, 149, 149);
