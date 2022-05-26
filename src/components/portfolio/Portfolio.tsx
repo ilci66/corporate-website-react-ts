@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import ContainerComponent from './ContainerComponent'
-import data from '../data/portfolioData';
+import ContainerComponent from '../ContainerComponent'
+import data from '../../data/portfolioData';
 import PortfolioItem from './PortfolioItem';
 import Numbers from './Numbers';
 
 
 const Portfolio = () => {
   return (
-    <Wrapper>
+    <Wrapper id='portfolio'>
       <ContainerComponent column={true}>
         <H2>Some of The Companies That Love Our Solutions</H2>
         <SubTitle>
@@ -35,7 +35,12 @@ const H2 = styled.h2`
   text-align: center;
   width: 100%;
   font-size: 2.4rem;
-  
+  @media (max-width: 1200px){
+    margin-top: 100px;
+  }
+  @media (max-width: 960px){
+    margin-top: 80px;
+  }
 `
 const SubTitle = styled.p`
   text-align: center;
@@ -48,4 +53,8 @@ const Grid = styled.div`
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
+  align-items: center;
+  @media (max-width: 600px){
+    grid-template-columns: 1fr;
+  }
 `

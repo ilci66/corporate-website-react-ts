@@ -6,7 +6,7 @@ import logo from '../../assets/marketing-co.png';
 const Logo = () => {
   return (
     <A href='#'>
-      <img src={logo} alt="brand logo" />
+      <Img src={logo} alt="brand logo" />
     </A>
   )
 }
@@ -15,4 +15,8 @@ export default Logo
 
 const A = styled.a`
   display: flex;
+`
+const Img = styled.img`
+  border-radius: 50%;
+  margin-top: 5px;
 `

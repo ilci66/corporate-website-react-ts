@@ -49,6 +49,9 @@ const Img = styled.img`
 const Wrapper = styled.div<styleProp>`
   position: relative;
   grid-column: span ${props => props.colSpan};
+  @media (max-width: 600px){
+    grid-column: 1/-1;
+  }
   :hover {
     ${A} {
       opacity: 0.7;

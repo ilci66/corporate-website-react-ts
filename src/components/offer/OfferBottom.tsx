@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import call from '../assets/callcenter-employees.jpg';
-import meeting from '../assets/office-people.jpg';
+import call from '../../assets/callcenter-employees.jpg';
+import meeting from '../../assets/office-people.jpg';
 
 const OfferBottom = () => {
   return (
@@ -45,6 +45,12 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px; 
   background: var(--black);
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
 `
 const Img = styled.img`
   height:100%;

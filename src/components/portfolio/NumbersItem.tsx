@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import CountUp from 'react-countup';
 
-
-
 type Props = {
   num: string,
   text: string,
@@ -26,10 +24,13 @@ const NumbersItem = (props: Props) => {
 export default NumbersItem
 
 const Wrapper = styled.div`
-  height: 300px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: 480px){
+    align-items: center;
+  }
 `
 
 const Num = styled.p`

@@ -17,13 +17,14 @@ const RightNavbarLink = ({ to }: propType) => {
 export default RightNavbarLink
 
 const A = styled.a`
-  color: var(--yellow);
+  transition: 0.2s;
+  color: var(--baby-blue-eyes);
   text-decoration: none;
   text-transform: uppercase;
   transform: 1s;
   margin-bottom: 20px;
   font-size: 1.4rem;
   :hover {
-    color: var(--white);
+    color: var(--nadeshiko-pink);
   }
 `

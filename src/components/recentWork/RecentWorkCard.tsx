@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import lines from '../assets/lines-orange-white.jpg'
+import lines from '../../assets/lines-orange-white.jpg'
 
 type propTypes = {
   title: string
@@ -18,7 +18,10 @@ const RecentWorkCard = (props:propTypes) => {
       </InfoBox>
       <WriterBox>
         <Img src={props.avatar} alt="" />
-        <p>{props.name}</p>
+        <WriterInfo>
+          <p>{props.name}</p>
+          <p>Sr. Web Developer</p>
+        </WriterInfo>
       </WriterBox>
     </Wrapper>
   )
@@ -60,14 +63,25 @@ const WriterBox = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 `
+const WriterInfo = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
 
 const H3 = styled.h3`
   font-size: 1.4rem;
+  @media (max-width: 960px){
+    font-size: 2rem;
+  }
   margin-bottom: 20px;
 `
 const WriterP = styled.p`
   margin-top: 6px;
-
+  @media (max-width: 960px){
+    font-size: 1.4rem;
+  }
 `
 
 const Img = styled.img`

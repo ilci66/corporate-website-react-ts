@@ -32,13 +32,13 @@ const StyledHamburger = styled.div<{ open: boolean }>`
   &:hover {
     cursor: pointer;
   }
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 1201px) {
     display: none;
   }
   div {
     width: 40px;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? "var(--yellow)" : 'var(--baby-blue-eyes)'};
+    background-color: ${({ open }) => open ? "var(--nadeshiko-pink)" : 'var(--baby-blue-eyes)'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s ease-in-out;

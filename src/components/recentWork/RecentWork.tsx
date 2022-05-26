@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import ContainerComponent from './ContainerComponent'
-import data from '../data/recentWorkCardData'
+import ContainerComponent from '../ContainerComponent'
+import data from '../../data/recentWorkCardData'
 import RecentWorkCard from './RecentWorkCard'
 import Brands from './Brands'
 
 
 const RecentWork = () => {
   return (
-    <Wrapper>
+    <Wrapper id='recent-work'>
       <ContainerComponent column={true}>
         <H2>Some of our most recent work</H2>
         <SubTitle>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quas maxime a doloremque esse.</SubTitle>
@@ -26,9 +26,9 @@ export default RecentWork
 const Wrapper = styled.section`
   width: 100%;
   margin-bottom: 60px;
+  margin-top: 120px;  
 `
 const H2 = styled.h2`
-  margin-top: 120px;
   width: 100%;
   text-align: center;
   font-size: 2.8rem;
@@ -48,4 +48,7 @@ const RecentWorkGrid = styled.div`
   width: 100%;
   margin: auto;
   margin-top: 60px;
+  @media (max-width: 960px){
+    grid-template-columns: 1fr;
+  }
 `

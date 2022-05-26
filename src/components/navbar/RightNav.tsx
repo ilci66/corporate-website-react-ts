@@ -26,6 +26,7 @@ export default RightNav
 const RightBarWrapper = styled.div<{open:boolean}>`
   position: fixed;
   display: flex;
+  border-left: 2px solid var(--baby-blue-eyes);
   justify-items: center;
   transition: all 0.3s ease-in-out;
   background: var(--gray);
@@ -35,7 +36,7 @@ const RightBarWrapper = styled.div<{open:boolean}>`
   height: 100vh;
   width: 250px;
   z-index:10;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 1201px) {
     display: none;
   }
 `

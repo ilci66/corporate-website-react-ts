@@ -27,11 +27,11 @@ const Navbar = (props: any) => {
 export default Navbar
 
 const Nav = styled.nav`
-  // backdrop-filter: blur(6px);
-  background: white;
+  // background: white;
   height: var(--top-margin);
   position: fixed;
   width: 100%;
+  max-width: 100vw;
   display: flex;
   flex-direction: row;
   z-index: 2;
@@ -42,7 +42,7 @@ const RightAlign = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  @media (max-width: 960px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `
