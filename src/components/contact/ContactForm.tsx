@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import Button from './Button'
+import Button from '../Button'
 
 const ContactForm = () => {
   const [name, setName] = useState<string>("");
@@ -50,7 +50,7 @@ const ContactForm = () => {
           />
         </Label>
         <Label htmlFor="f-textarea">
-          Enter your name
+          What would you like to share with us
         </Label>
           <Textarea 
             required

@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer'
 
 const Numbers = () => {
   
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     rootMargin: "0px",
     threshold: 1,
   });
@@ -15,8 +15,6 @@ const Numbers = () => {
 
   return (
     <Wrapper>
-          {/* <div ref={ref}></div> */}
-    {/* <h2>{`Header inside viewport ${inView}.`}</h2> */}
       <ContainerComponent>     
         <Grid ref={ref}>
           {data.map(d => {

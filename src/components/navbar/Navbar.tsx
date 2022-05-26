@@ -5,7 +5,13 @@ import Hamburger from './Hamburger'
 import Logo from './Logo'
 import NavbarLink from './NavbarLink'
 
-const Navbar = (props: any) => {
+interface PropTypes {
+  inView: boolean
+}
+
+const Navbar = (props: PropTypes) => {
+
+  console.log("it is really =>", props.inView)
   return (
     <Nav>
       <ContainerComponent>
@@ -27,7 +33,7 @@ const Navbar = (props: any) => {
 export default Navbar
 
 const Nav = styled.nav`
-  // background: white;
+
   height: var(--top-margin);
   position: fixed;
   width: 100%;

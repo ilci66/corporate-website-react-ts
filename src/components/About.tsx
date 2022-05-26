@@ -2,34 +2,36 @@ import React from 'react'
 import styled from 'styled-components'
 import cactusImg from '../assets/yellow-cactus-white-bg.jpg';
 
-const About = () => {
-  return (<>
-  <AboutWrapper id="about">
-    <Img>
-    </Img>
-    <TextBox>
-      <TextBoxTitle>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi molestias
-      </TextBoxTitle>
-      <TextBoxTitleText>
-      Odio labore sequi consequatur ipsa cupiditate pariatur ducimus itaque consequuntur nulla nostrum!cupiditate pariatur ducimus itaque consequuntur nulla nostrum!
-      </TextBoxTitleText>
-      <div>
-        <InfoBoxTitle>
-          Some title
-        </InfoBoxTitle>
-        <InfoText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic ipsa numquam quos ullam quo eum? Sit a dicta assumenda est doloremque unde eius consequuntur sint vero, dolorem non illo?</InfoText>  
-      </div>
-      <div>
-        <InfoBoxTitle>
-          another title
-        </InfoBoxTitle>
-        <InfoText>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae neque cupiditate consequuntur perferendis laboriosam mollitia vitae ipsum expedita. </InfoText>
-      </div>
 
-    </TextBox>
-  </AboutWrapper>
-  </>)
+
+const About = (props:any) => {
+  return (
+    <AboutWrapper id="about">
+      <Img>
+      </Img>
+      <TextBox>
+        <TextBoxTitle>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi molestias
+        </TextBoxTitle>
+        <TextBoxTitleText>
+          Odio labore sequi consequatur ipsa cupiditate pariatur ducimus itaque consequuntur nulla nostrum!cupiditate pariatur ducimus itaque consequuntur nulla nostrum!
+        </TextBoxTitleText>
+        <div>
+          <InfoBoxTitle>
+            Some Title
+          </InfoBoxTitle>
+          <InfoText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic ipsa numquam quos ullam quo eum? Sit a dicta assumenda est doloremque unde eius consequuntur sint vero, dolorem non illo?</InfoText>  
+        </div>
+        <div>
+          <InfoBoxTitle>
+            Another Title
+          </InfoBoxTitle>
+          <InfoText>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae neque cupiditate consequuntur perferendis laboriosam mollitia vitae ipsum expedita. </InfoText>
+        </div>
+
+      </TextBox>
+    </AboutWrapper>
+  )
 }
 
 export default About
@@ -73,7 +75,8 @@ const TextBox = styled.div`
     padding: 60px;
   }
   @media (max-width: 480px) {
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
   }
 `
 const TextBoxTitle = styled.h2`

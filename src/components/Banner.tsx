@@ -4,18 +4,19 @@ import bgImg from '../assets/office-designers.jpg';
 import Button from './Button';
 import ContainerComponent from './ContainerComponent';
 
-const Banner = () => {
+
+
+const Banner = (props: any) => {
   return (
     <BannerWrapper>
       <ContainerComponent column={true}>
-
       <BannerContent>
         <H1>YOU BRAND WILL GROW HERE</H1>
         <H2>Lorem ipsum, dolor sit</H2>
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia voluptatum minus deserunt delectus ipsum cupiditate. Unde, repudiandae molestiae? Mollitia temporibus unde beatae. Odio quod, accusamus dicta fugiat molestiae recusandae?</P>
-        <a href="#about"><Button text={"discover"}/></a>
+        <a style={{marginTop: "-50px"}} href="#about"><Button text={"discover"}/></a>
       </BannerContent>
-      </  ContainerComponent>
+      </ContainerComponent>
     </BannerWrapper>
   )
 }

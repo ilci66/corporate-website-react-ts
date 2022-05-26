@@ -18,7 +18,7 @@ const Offer = () => {
           <OfferSubTitle>Corporis modi optio, dolorum fugiat magni</OfferSubTitle>
         </OfferHeader>
 
-        {data.map(d => <OfferBox>
+        {data.map(d => <OfferBox key={d.title}>
           <DetailInfo>
             <DetailText>{d.detail}</DetailText>
           </DetailInfo>
@@ -30,9 +30,8 @@ const Offer = () => {
             <BoxText>{d.text}</BoxText>
           </OfferInfo>
         </OfferBox>)}
-
+        
       </Content>
-    
     </OfferWrapper>
     <OfferBottom />
     </>
