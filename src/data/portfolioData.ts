@@ -3,7 +3,7 @@ import view from '../assets/blue-red-view.jpg';
 import flower from '../assets/flower-blue.jpg';
 import lines from '../assets/lines-orange-white.jpg';
 import neuron from '../assets/neuron.jpg';
-import tree from '../assets/snow-tree.jpg';
+import tree from '../assets/tree-green.jpg';
 import map from '../assets/map-pins.jpg';
 
 interface PortfolioData {
