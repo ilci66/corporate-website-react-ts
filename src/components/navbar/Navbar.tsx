@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import ContainerComponent from '../ContainerComponent'
 import Hamburger from './Hamburger'
 import Logo from './Logo'
 import NavbarLink from './NavbarLink'
 
-interface PropTypes {
-  inView: boolean
-}
+const Navbar = (props:any) => {
 
-const Navbar = (props: PropTypes) => {
+  useEffect(() => {
+    const nav:HTMLElement = document.querySelector("#navbar")!;
+    
+    // if(props.onScreen) nav.classList.add("red");
+    // else if(props.onScreen) nav.classList.remove("white");
+    
+    console.log("asd", props.bgColor)
+  
+  }, [props.bgColor]);
 
-  console.log("it is really =>", props.inView)
+
   return (
-    <Nav>
+    <Nav id="navbar">
       <ContainerComponent>
         <Logo />
         <RightAlign>
@@ -21,8 +27,8 @@ const Navbar = (props: PropTypes) => {
           <NavbarLink to="we offer" />
           <NavbarLink to="portfolio" />
           <NavbarLink to="recent work" />
-          <NavbarLink to="contact" />
           <NavbarLink to="portfolio" />
+          <NavbarLink to="contact" />
         </RightAlign>
         <Hamburger />
       </ContainerComponent>
@@ -32,8 +38,8 @@ const Navbar = (props: PropTypes) => {
 
 export default Navbar
 
-const Nav = styled.nav`
-
+const Nav = styled.nav<any>`
+  background: ${props => props.bgColor};
   height: var(--top-margin);
   position: fixed;
   width: 100%;

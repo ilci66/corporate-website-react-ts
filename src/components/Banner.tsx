@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import bgImg from '../assets/office-designers.jpg';
 import Button from './Button';
 import ContainerComponent from './ContainerComponent';
-
+import { useInView } from 'react-intersection-observer';
 
 
 const Banner = (props: any) => {
+
+  const { ref, inView } = useInView({
+    rootMargin: "0px",
+    threshold: 1,
+  });
+
+  useEffect(() => {
+    if(inView) props.setOnScreen(true);
+    else if(!inView) props.setOnScreen(false);
+  }, [inView])
+
   return (
-    <BannerWrapper>
+    <BannerWrapper ref={ref}>
       <ContainerComponent column={true}>
       <BannerContent>
         <H1>YOU BRAND WILL GROW HERE</H1>
@@ -55,15 +66,15 @@ const H1 = styled.h1`
   }
 `
 const H2 = styled.h2`
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 16px;
   text-transform: uppercase;
   color: var(--baby-blue-eyes);
   @media (max-width: 1440px) {
-    font-size: 2.6rem;
+    font-size: 3.6rem;
   }
   @media (max-width: 1200px) {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
 `
 const P = styled.p`

@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import cactusImg from '../assets/yellow-cactus-white-bg.jpg';
 
 
-
-const About = (props:any) => {
+const About = () => {
   return (
     <AboutWrapper id="about">
       <Img>
