@@ -18,11 +18,12 @@ function App() {
   useEffect(() => {
     if(!onScreen) setBGColor("var(--white)");
     else if(onScreen) setBGColor("inherit");
-  }, onScreen)
+    console.log("is it on screen", onScreen)
+  }, [onScreen])
 
   return (
     <AppWrapper>
-      <Navbar onScreen={onScreen}/>
+      <Navbar bgColor={bgColor}/>
       <Banner setOnScreen={setOnScreen}/>
       <About />
       <Offer />
