@@ -17,7 +17,7 @@ const Banner = (props: any) => {
     if(inView) props.setOnScreen(true);
     else if(!inView) props.setOnScreen(false);
     console.log("is banner in view =>", inView)
-  }, [inView])
+  }, [inView, props])
 
   return (
     <BannerWrapper ref={ref}>
