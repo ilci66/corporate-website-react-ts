@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import  styled  from 'styled-components';
+import styled  from 'styled-components';
 import Banner from './components/Banner';
 import Navbar from './components/navbar/Navbar';
 import About from './components/About';
@@ -18,7 +18,6 @@ function App() {
   useEffect(() => {
     if(!onScreen) setBGColor("var(--white)");
     else if(onScreen) setBGColor("inherit");
-    console.log("is it on screen", onScreen)
   }, [onScreen])
 
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import ContainerComponent from '../ContainerComponent'
 import Hamburger from './Hamburger'
@@ -7,18 +7,8 @@ import NavbarLink from './NavbarLink'
 
 const Navbar = (props:any) => {
 
-  useEffect(() => {
-    const nav:HTMLElement = document.querySelector("#navbar")!;
-    
-    console.log("asd", props.bgColor)
-    
-    nav.style.background = props.bgColor
-
-  }, [props.bgColor]);
-
-
   return (
-    <Nav id="navbar">
+    <Nav bgColor={props.bgColor} id="navbar">
       <ContainerComponent>
         <Logo />
         <RightAlign>
@@ -37,11 +27,12 @@ const Navbar = (props:any) => {
 
 export default Navbar
 
-const Nav = styled.nav<any>`
+const Nav = styled.nav<{ bgColor: string }>`
   background: ${props => props.bgColor};
   height: var(--top-margin);
   position: fixed;
-  transition: 0.7s;
+  transition: .4s;
+  transition-delay: 1s;
   width: 100%;
   max-width: 100vw;
   display: flex;

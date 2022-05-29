@@ -5,10 +5,6 @@ type propTypes = {
   img: string
   text: string
 }
-  
-type styleProp = {
-  img: string
-}
 
 const BrandItem = (props:propTypes) => {
   return (
@@ -39,6 +35,6 @@ const Img = styled.img`
   }
 `
 
-const P = styled.p`
-  margin-bottom: 20px;
-`
+// const P = styled.p`
+//   margin-bottom: 20px;
+// `

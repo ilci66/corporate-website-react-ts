@@ -16,7 +16,6 @@ const Banner = (props: any) => {
   useEffect(() => {
     if(inView) props.setOnScreen(true);
     else if(!inView) props.setOnScreen(false);
-    console.log("is banner in view =>", inView)
   }, [inView, props])
 
   return (
