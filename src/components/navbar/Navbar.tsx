@@ -28,7 +28,7 @@ const Navbar = (props:any) => {
 export default Navbar
 
 const Nav = styled.nav<{ bgColor: string }>`
-  background: ${props => props.bgColor};
+  background: linear-gradient(0.25turn, rgba(0,0,0,0), ${props => props.bgColor});
   height: var(--top-margin);
   position: fixed;
   transition: .4s;
