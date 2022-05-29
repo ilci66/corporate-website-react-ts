@@ -7,8 +7,6 @@ interface OfferData {
   icon: IconDefinition 
 };
 
-// faRocket,  faCode, faRobot, faGift
-
 const data:OfferData[] = [
   {
     title: "We Are Fast",

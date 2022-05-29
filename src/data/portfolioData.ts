@@ -1,10 +1,10 @@
-import mechanic from '../assets/black-white-mechanic.jpg';
-import view from '../assets/blue-red-view.jpg';
-import flower from '../assets/flower-blue.jpg';
-import lines from '../assets/lines-orange-white.jpg';
-import neuron from '../assets/neuron.jpg';
+import mechanic from '../assets/black-white-mechanic-smaller.jpg';
+import view from '../assets/blue-red-view-smaller.jpg';
+import flower from '../assets/flower-blue-smaller.jpg';
+import lines from '../assets/lines-orange-white-smaller.jpg';
+import neuron from '../assets/neuron-smaller.jpg';
 import tree from '../assets/tree-green.jpg';
-import map from '../assets/map-pins.jpg';
+import map from '../assets/map-pins-smaller.jpg';
 
 interface PortfolioData {
     img: string

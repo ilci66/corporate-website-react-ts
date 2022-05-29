@@ -26,10 +26,10 @@ export default RightNav
 const RightBarWrapper = styled.div<{open:boolean}>`
   position: fixed;
   display: flex;
-  border-left: 2px solid var(--baby-blue-eyes);
+  border-left: 4px solid var(--baby-blue-eyes);
   justify-items: center;
   transition: all 0.3s ease-in-out;
-  background: var(--gray);
+  background: var(--white);
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   top: 0;
   right: 0;

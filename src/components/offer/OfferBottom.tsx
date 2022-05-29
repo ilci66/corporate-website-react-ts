@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import call from '../../assets/callcenter-employees.jpg';
-import meeting from '../../assets/office-people.jpg';
+import call from '../../assets/callcenter-employees-smaller.jpg';
+import meeting from '../../assets/office-people-smaller.jpg';
 
 const OfferBottom = () => {
   return (

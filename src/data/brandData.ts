@@ -1,8 +1,8 @@
-import awesome from '../assets/awesome-logo.png';
-import cool from '../assets/cool-brand.png';
-import international from '../assets/international-brand.png';
-import quality from '../assets/quality-brand.png';
-import known from '../assets/well-known-brand.png';
+import awesome from '../assets/awesome-logo-smaller.jpg';
+import cool from '../assets/cool-brand-smaller.jpg';
+import international from '../assets/international-brand-smaller.jpg';
+import quality from '../assets/quality-brand-smaller.jpg';
+import known from '../assets/well-known-brand-smaller.jpg';
 
 interface BrandData {
   img: string
