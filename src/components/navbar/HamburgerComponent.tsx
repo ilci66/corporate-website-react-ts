@@ -16,7 +16,7 @@ const Hamburger = () => {
   </>)
 }
 
-export default Hamburger 
+export default Hamburger;
 
 const StyledHamburger = styled.div<{ open: boolean }>`
   position: ${({ open }) => open ? "fixed" : 'absolute'};

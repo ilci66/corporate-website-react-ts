@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ContainerComponent from '../ContainerComponent'
-import Hamburger from './Hamburger'
+import Hamburger from './HamburgerComponent'
 import Logo from './Logo'
 import NavbarLink from './NavbarLink'
 
