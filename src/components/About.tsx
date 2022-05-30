@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import cactusImg from '../assets/yellow-cactus-white-bg-smaller.jpg';
+import cactusImg from '../assets/yellow-cactus-white-bg-smaller.webp';
 
 
 const About = () => {

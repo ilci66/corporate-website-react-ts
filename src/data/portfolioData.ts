@@ -1,8 +1,8 @@
-import mechanic from '../assets/black-white-mechanic-smaller.jpg';
-import view from '../assets/blue-red-view-smaller.jpg';
-import flower from '../assets/flower-blue-smaller.jpg';
-import lines from '../assets/lines-orange-white-smaller.jpg';
-import neuron from '../assets/neuron-smaller.jpg';
+import mechanic from '../assets/black-white-mechanic-smaller.webp';
+import view from '../assets/blue-red-view-smaller.webp';
+import flower from '../assets/flower-blue-smaller.webp';
+import lines from '../assets/lines-orange-white-smaller.webp';
+import neuron from '../assets/neuron-smaller.webp';
 import tree from '../assets/tree-green.jpg';
 import map from '../assets/map-pins-smaller.jpg';
 

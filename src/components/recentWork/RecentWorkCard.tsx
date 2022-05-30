@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import lines from '../../assets/lines-orange-white.jpg'
+import lines from '../../assets/lines-orange-white-smaller.webp'
 
 type propTypes = {
   title: string

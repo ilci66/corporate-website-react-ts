@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import bgImg from '../assets/office-designers-smallerx3.jpg';
+import bgImg from '../assets/office-designers-smallerx3.webp';
 import Button from './Button';
 import ContainerComponent from './ContainerComponent';
 import { useInView } from 'react-intersection-observer';
