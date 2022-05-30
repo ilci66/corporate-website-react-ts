@@ -36,7 +36,7 @@ const Nav = styled.nav<{ bgColor: string }>`
   max-width: 100vw;
   display: flex;
   flex-direction: row;
-  z-index: 2;
+  z-index: 100;
 `
 const RightAlign = styled.div`
   margin-left: auto;
