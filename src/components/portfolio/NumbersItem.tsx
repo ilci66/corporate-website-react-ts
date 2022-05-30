@@ -16,7 +16,7 @@ const NumbersItem = (props: Props) => {
   return (
     <Wrapper>
       <Num>{activated && <CountUp start={0} end={parseInt(props.num)} duration={2.5} />}</Num>
-      <Text>{props.text}</Text>
+      <p>{props.text}</p>
     </Wrapper>
   )
 }
@@ -36,8 +36,4 @@ const Wrapper = styled.div`
 const Num = styled.p`
   font-size: 2.8rem;
   font-weight: bold;
-`
-
-const Text = styled.p`
-  font-size:1.4rem;
 `

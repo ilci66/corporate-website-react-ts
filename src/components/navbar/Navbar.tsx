@@ -5,7 +5,7 @@ import Hamburger from './HamburgerComponent'
 import Logo from './Logo'
 import NavbarLink from './NavbarLink'
 
-const Navbar = (props:any) => {
+const Navbar = (props: { bgColor: string }) => {
 
   return (
     <Nav bgColor={props.bgColor} id="navbar">
@@ -16,7 +16,6 @@ const Navbar = (props:any) => {
           <NavbarLink to="we offer" />
           <NavbarLink to="portfolio" />
           <NavbarLink to="recent work" />
-          <NavbarLink to="portfolio" />
           <NavbarLink to="contact" />
         </RightAlign>
         <Hamburger />

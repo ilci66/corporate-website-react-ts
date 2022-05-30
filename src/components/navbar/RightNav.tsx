@@ -12,10 +12,9 @@ const RightNav = ( props: propType) => {
       <LinkContainer>
         <RightNavbarLink to="about" />
         <RightNavbarLink to="we offer" />
+        <RightNavbarLink to="portfolio" />
         <RightNavbarLink to="recent work" />
-        <RightNavbarLink to="portfolio" />
         <RightNavbarLink to="contact" />
-        <RightNavbarLink to="portfolio" />
       </LinkContainer>
     </RightBarWrapper>
   )
