@@ -25,7 +25,7 @@ const Banner = (props: any) => {
         <H1>YOU BRAND WILL GROW HERE</H1>
         <H2>Lorem ipsum, dolor sit</H2>
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia voluptatum minus deserunt delectus ipsum cupiditate. Unde, repudiandae molestiae? Mollitia temporibus unde beatae. Odio quod, accusamus dicta fugiat molestiae recusandae?</P>
-        <a style={{marginTop: "-50px"}} href="#about"><Button text={"discover"}/></a>
+        <a href="#about"><Button text={"discover"}/></a>
       </BannerContent>
       </ContainerComponent>
     </BannerWrapper>
@@ -76,11 +76,24 @@ const H2 = styled.h2`
   @media (max-width: 1200px) {
     font-size: 3rem;
   }
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 `
 const P = styled.p`
   text-align: center;
   max-width: 500px;
   font-size: 1.2rem;
   margin-bottom: 100px;
+  margin-top: 20px;
   line-height: 1.7;
+  @media (max-width: 960px) {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
 `

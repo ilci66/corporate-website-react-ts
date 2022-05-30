@@ -18,5 +18,7 @@ const A = styled.a`
 `
 const Img = styled.img`
   border-radius: 50%;
-  margin-top: 5px;
+  margin: 5px;
+  width: 94px;
+
 `
