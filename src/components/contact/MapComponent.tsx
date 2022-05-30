@@ -8,7 +8,8 @@ import ReactMapGL, {
 } from 'react-map-gl';
 import pin from '../../assets/pin.png'
 
-function MapComponent() {
+const MapComponent = () => {
+  console.log("asdasd => ",process.env.REACT_APP_MAPBOX_ACCESS_TOKEN)
   return (
     <Wrapper>
       <ReactMapGL
