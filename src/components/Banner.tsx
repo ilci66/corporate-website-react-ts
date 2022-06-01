@@ -76,9 +76,14 @@ const H2 = styled.h2`
   @media (max-width: 1200px) {
     font-size: 3rem;
   }
+  @media (max-width: 720px) {
+    text-align: center;
+    font-size: 2.6rem;
+  }
   @media (max-width: 480px) {
     font-size: 2rem;
   }
+  
 `
 const P = styled.p`
   text-align: center;
