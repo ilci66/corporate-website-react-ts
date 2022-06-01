@@ -28,7 +28,7 @@ const MapComponent = () => {
         />
         <FullscreenControl />
         <Marker longitude={2.3} latitude={48.87} anchor="bottom" >
-          <img style={{width:"34px", height:"34px",top:"-17px", bottom: "-17px"}} src={pin} alt="pin" />
+          <img style={{width:"21px", height:"14px",top:"-11px", bottom: "-7px"}} src={pin} alt="pin" />
         </Marker>
         <NavigationControl visualizePitch={true}/>
       </ReactMapGL>
