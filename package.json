@@ -13,6 +13,7 @@
     "@types/jest": "^27.5.1",
     "@types/node": "^16.11.35",
     "@types/react": "^18.0.9",
+    "mapbox-gl": "^2.8.2",
     "react": "^18.1.0",
     "react-countup": "^6.2.0",
     "react-intersection-observer": "^9.1.0",
@@ -21,7 +22,8 @@
     "react-visibility-sensor": "^5.1.1",
     "styled-components": "^5.3.5",
     "typescript": "^4.6.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "worker-loader": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

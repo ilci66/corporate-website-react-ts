@@ -3,8 +3,8 @@ import view from '../assets/blue-red-view-smaller.webp';
 import flower from '../assets/flower-blue-smaller.webp';
 import lines from '../assets/lines-orange-white-smaller.webp';
 import neuron from '../assets/neuron-smaller.webp';
-import tree from '../assets/tree-green.jpg';
-import map from '../assets/map-pins-smaller.jpg';
+import tree from '../assets/tree-green.webp';
+import map from '../assets/map-pins-smaller.webp';
 
 interface PortfolioData {
     img: string

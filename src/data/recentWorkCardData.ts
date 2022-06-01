@@ -1,4 +1,4 @@
-import woman from '../assets/woman-avatar-smaller.jpg'
+import woman from '../assets/woman-avatar-smaller.webp'
 
 interface recentWorkCardData {
   title: string
