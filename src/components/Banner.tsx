@@ -6,6 +6,7 @@ import ContainerComponent from './ContainerComponent';
 import { useInView } from 'react-intersection-observer';
 
 
+
 const Banner = (props: any) => {
 
   const { ref, inView } = useInView({

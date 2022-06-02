@@ -6,8 +6,7 @@ import cactusImg from '../assets/yellow-cactus-white-bg-smaller.webp';
 const About = () => {
   return (
     <AboutWrapper id="about">
-      <Img>
-      </Img>
+      <Img />
       <TextBox>
         <TextBoxTitle>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi molestias

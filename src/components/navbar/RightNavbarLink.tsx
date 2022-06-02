@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 
-type propType = {
-    to: string;
+interface propType  {
+  to: string;
 }
 
 

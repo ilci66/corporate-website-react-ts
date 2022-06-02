@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
 interface PropType {
-  [x: string]: ReactNode
+  children: ReactNode
   column: boolean 
 }
 
