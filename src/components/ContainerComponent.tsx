@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface Prop  {
+interface PropType {
+  [x: string]: ReactNode
   column: boolean 
 }
 
-const ContainerComponent = (props :any) => {
+const ContainerComponent = (props:PropType ) => {
   return (
     <Container column={props.column}>
       {props.children}
@@ -15,7 +16,7 @@ const ContainerComponent = (props :any) => {
 
 export default ContainerComponent;
 
-const Container = styled.div<Prop>`
+const Container = styled.div<PropType>`
   display:flex;
   flex-direction: ${props => props.column ? "column": "row"};
   width: 100%;

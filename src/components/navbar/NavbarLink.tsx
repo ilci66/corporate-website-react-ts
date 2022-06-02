@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-type propType = {
+interface PropType {
   to: string;
 }
 
-const NavbarLink = ({ to }: propType) => {
+const NavbarLink = ({ to }: PropType) => {
   const link = to.replace(' ', '-')
   return (
     <A href={`#${link}`}>{to}</A>

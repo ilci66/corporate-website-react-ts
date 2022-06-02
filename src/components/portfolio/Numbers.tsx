@@ -15,7 +15,7 @@ const Numbers = () => {
 
   return (
     <Wrapper>
-      <ContainerComponent>     
+      <ContainerComponent column={false}>     
         <Grid ref={ref}>
           {data.map(d => {
             return <NumbersItem key={d.num} inView={inView} num={d.num} text={d.text}/>

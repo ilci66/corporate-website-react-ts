@@ -6,7 +6,7 @@ import Map from './MapComponent'
 
 const Contact = () => {
   return (
-    <ContainerComponent>
+    <ContainerComponent column={false}>
       <Wrapper id='contact'>
         <Map />
         <ContactForm />

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import RightNavbarLink from './RightNavbarLink';
 
-type propType = {
+interface propType {
   open:boolean
 }
 

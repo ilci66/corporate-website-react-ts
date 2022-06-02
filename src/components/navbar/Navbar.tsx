@@ -9,7 +9,7 @@ const Navbar = (props: { bgColor: string }) => {
 
   return (
     <Nav bgColor={props.bgColor} id="navbar">
-      <ContainerComponent>
+      <ContainerComponent column={false}>
         <Logo />
         <RightAlign>
           <NavbarLink to="about" />
