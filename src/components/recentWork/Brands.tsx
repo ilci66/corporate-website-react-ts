@@ -8,7 +8,7 @@ const Brands = () => {
   return (
     <Wrapper>
       <H3>You may know our partners</H3>
-      {data.map(d => <BrandItem key={d.text} img={d.img} text={d.text} />)}
+      {data.map(d => <BrandItem img={d.img} />)}
     </Wrapper>
   )
 }

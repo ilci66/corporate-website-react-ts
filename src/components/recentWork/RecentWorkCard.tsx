@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import lines from '../../assets/lines-orange-white-smaller.webp'
 
-type propTypes = {
+interface PropTypes  {
   title: string
   text: string
   name: string
   avatar: string
 }
 
-const RecentWorkCard = (props:propTypes) => {
+const RecentWorkCard = (props:PropTypes) => {
   return (
     <Wrapper>
       <InfoBox>

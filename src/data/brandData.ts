@@ -6,15 +6,14 @@ import known from '../assets/well-known-brand-smaller.webp';
 
 interface BrandData {
   img: string
-  text: string
 };
 
 const data:BrandData[] = [
-  {img: awesome,  text: "Awesome Brand" },
-  {img: cool,  text: "Cool Brand" },
-  {img: known,  text: "Well Known Brand" },
-  {img: international,  text: "International Brand" },
-  {img: quality,  text: "Quality Brand" }
+  {img: awesome},
+  {img: cool},
+  {img: known},
+  {img: international},
+  {img: quality }
 ]
 
 export default data

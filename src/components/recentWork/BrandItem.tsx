@@ -1,16 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-type propTypes = {
+interface PropTypes {
   img: string
-  text: string
 }
 
-const BrandItem = (props:propTypes) => {
+const BrandItem = (props:PropTypes) => {
   return (
     <Wrapper>
       <Img src={props.img} alt="" />
-      {/* <P>{props.text}</P> */}
     </Wrapper>
   )
 }
@@ -34,7 +32,3 @@ const Img = styled.img`
     box-shadow: 0px 0px 32px var(--nadeshiko-pink);
   }
 `
-
-// const P = styled.p`
-//   margin-bottom: 20px;
-// `
