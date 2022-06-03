@@ -17,9 +17,7 @@ const Numbers = () => {
     <Wrapper>
       <ContainerComponent column={false}>     
         <Grid ref={ref}>
-          {data.map(d => {
-            return <NumbersItem key={d.num} inView={inView} num={d.num} text={d.text}/>
-          })}  
+          {data.map(d => <NumbersItem key={d.num} inView={inView} num={d.num} text={d.text}/>)}  
         </Grid>
       </ContainerComponent>
     </Wrapper>

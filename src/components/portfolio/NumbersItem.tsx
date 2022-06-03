@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import CountUp from 'react-countup';
 
-type Props = {
+interface PropTypes {
   num: string,
   text: string,
   inView: boolean
 }
 
-const NumbersItem = (props: Props) => {
+const NumbersItem = (props: PropTypes) => {
   const [ activated, setActivated ] = useState<boolean>(false);
 
   useEffect(() => { if(props.inView) setActivated(true) }, [props.inView])

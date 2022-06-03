@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
-type propTypes = {
+interface propTypes {
   imgSrc: string
   alt: string
   colSpan: string
   link: string
 }
 
-type styleProp = {
+interface styleProp {
   colSpan: string
 }
 
